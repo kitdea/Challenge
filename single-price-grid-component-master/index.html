@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body, html {
+      margin: 0;
+      height: 100%;
+      box-sizing: border-box;
+
+    }
+    body{
+      font-size: 16px;
+      font-family: 'Karla', sans-serif;
+      font-weight: 400, 700;
+      color: hsl(204, 43%, 93%);
+    }
+
+    /* COMMUNITY */
+    #join-our-com-sect {
+      display: grid;
+      background-color: white;
+      padding: 40px;
+      /* width: 50%; */
+      /* margin: 200px auto; */
+      /* border: 1px solid grey 0.22; */
+      /* box-shadow: 0 6px 8px rgba(0,0,0,0.20); */
+    }
+
+    #join-our-com-sect h1 {
+      color: hsl(179, 62%, 43%);
+      font-weight: 700;
+    }
+    h3 {
+      color: hsl(71, 73%, 54%);
+    }
+    #join-our-com-sect p {
+      color: hsl(218, 22%, 67%);
+    }
+
+    /* <!-- MONTHLY  SUBSCRIPTION --> */
+    .mon-why-temp {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .mon-sub-grid {
+      background-color: hsl(179, 62%, 43%);
+      padding: 40px;
+    }
+    .mon-sub-grid h2 {
+      font-weight: 700;
+    }
+    .mon-sub-grid span {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    button {
+      background-color: hsl(71, 73%, 54%);
+      border: 0;
+      color: white;
+      padding: 15px 32px;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    /* WHY US? */
+    .sect-list-grid {
+      padding: 40px;
+      background-color: hsl(179, 62%, 43%, 0.80);
+
+    }
+
+    .sect-list-grid p {
+      line-height: 0.5rem;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="join-our-com-sect">
+    <h1>Join our community</h1>
+
+    <h3>30-day, hassle-free money back guarantee</h3>
+
+    <p>Gain access to our full library of tutorials along with expert code reviews.
+      Perfect for any developers who are serious about honing their skills.
+    </p>
+  </div>
+
+  <!-- MONTHLY  SUBSCRIPTION -->
+  <div class="mon-why-temp">
+  <div class="mon-sub-grid">
+    <h1>Monthly Subscription</h1>
+
+    <p class="month-per-sub"><span>&dollar;29</span> per month</p>
+
+    <p>Full access for less than &dollar;1 a day</p>
+
+    <button type="mon-per-sub-button">Sign Up</button>
+  </div>
+
+<!-- WHY US? -->
+  <div class="sect-list-grid">
+    <h1>Why Us</h1>
+
+        <p>Tutorials by industry experts</p>
+        <p>Peer &amp; expert code review</p>
+        <p>Coding exercises</p>
+        <p>Access to our GitHub repos</p>
+        <p>Community forum</p>
+        <p>Flashcard decks</p>
+        <p>New videos every week</p>
+
+    </div>
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Francis Mar Rosales</a>.
+    </p>
+  </footer>
+</body>
+</html>
