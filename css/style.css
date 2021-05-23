@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: hsl(218, 22%, 67%);
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.grid-container {
+  color: hsl(204, 43%, 93%);
+  box-shadow: 2px 2px 20px;
+  margin: 2rem;
+}
+
+/* COMMUNITY */
+.join-our-com-sect {
+  display: grid;
+  background-color: white;
+  padding: 2rem;
+}
+
+.join-our-com-sect h3 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-our-com-sect h4 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1rem;
+}
+
+.join-our-com-sect p {
+color: hsl(218, 22%, 67%);
+line-height: 1.6rem;
+}
+
+/* <!-- MONTHLY  SUBSCRIPTION --> */
+.mon-why-temp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.mon-sub-grid {
+  background-color: hsl(179, 62%, 43%);
+  padding: 2rem;
+}
+
+.mon-sub-grid h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dollar {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-gray {
+  font-size: 1rem;
+  color: hsl(204, 43%, 93%);
+}
+
+.mon-sub-grid p {
+  margin: 1rem 0;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  font-size: 1rem;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 4px;
+  width: 100%;
+  box-shadow: 2px 2px 12px hsl(218, 22%, 67%);
+}
+
+/* WHY US? */
+.sect-list-grid {
+  padding: 2rem;
+  background-color: hsl(179, 62%, 43%, 0.80);
+}
+
+.sect-list-grid h3 {
+  margin-bottom: 1rem;
+}
+
+.sect-list-grid p {
+  line-height: 1.6rem;
+}
+
+@media(min-width: 750px) {
+  .grid-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .join-our-com-sect, .mon-sub-grid, .sect-list-grid {
+    padding: 2rem;
+  }
+
+  .join-our-com-sect h3, .mon-sub-grid h3, .sect-list-grid h3 {
+    font-size: 1.4rem;
+  }
+
+  .mon-sub-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mon-sub-grid p {
+    margin: unset;
+  }
+
+  .mon-sub-grid h3 {
+    margin-bottom: unset;
+  }
+}
